@@ -8,7 +8,7 @@ import ElementUI from 'element-ui'
 //导入element UI 样式文件
 import 'element-ui/lib/theme-chalk/index.css'
 
-Vue.use(ElementUI)
+Vue.use(ElementUI);
 //导入mintUI
 // import MintUI from 'mint-ui'
 // import 'mint-ui/lib/style.css'
@@ -33,8 +33,8 @@ import VueAxios from 'vue-axios'
 Vue.prototype.$axios = axios;
 // 设置axios可以携带cookie
 // axios.defaults.withCredentials = true;
-axios.defaults.baseURL = 'http://119.3.39.150/Emes-YkdPda-Api'//公司服务器
-// axios.defaults.baseURL = 'http://192.168.20.3/Emes-YkdPda-Api'//客户内网
+// axios.defaults.baseURL = 'http://119.3.39.150/Emes-YkdPda-Api'//公司服务器
+axios.defaults.baseURL = 'http://192.168.20.3/Emes-YkdPda-Api'//客户内网
 // axios.defaults.baseURL = 'http://218.90.139.234:8090'; //客户外网
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8';
 // axios.defaults.headers.common['token'] = store.state.token
